@@ -12,34 +12,19 @@ Apache Airflow is an open-source workflow orchestration platform used to program
    - **Integrations**: Has operators and hooks to connect with databases, cloud providers (AWS, GCP, Azure), big data frameworks (Spark, Hive), and more.
 
 
-🔨 Example : Config 
+🔨 Typical Use Cases
+```
+ETL (Extract, Transform, Load) pipelines
+Data warehouse updates (e.g., nightly batch jobs)
+Machine learning model training and deployment workflows
+Automating business reports
+Coordinating complex cloud operations
+```
 
-## AWS
+🚀 
 ```
-apiVersion: aws.upbound.io/v1beta1
-kind: ProviderConfig
-metadata:
-  name: default
-spec:
-  credentials:
-    source: Secret
-    secretRef:
-      namespace: crossplane-system
-      name: aws-secret
-      key: creds
-```
-## Google
-```
-apiVersion: gcp.upbound.io/v1beta1
-kind: ProviderConfig
-metadata:
-  name: default
-spec:
-  projectID: 
-  credentials:
-    source: Secret
-    secretRef:
-      namespace: crossplane-system
-      name: gcp-secret
-      key: creds
+terraform init
+terraform validate
+terraform plan -var-file="template.tfvars"
+terraform apply -var-file="template.tfvars" -auto-approve
 ```
