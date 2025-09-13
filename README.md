@@ -4,20 +4,12 @@
 Apache Airflow is an open-source workflow orchestration platform used to programmatically author, schedule, and monitor data pipelines or other workflows.
 
 
-🧱 Key Features of Crossplane 
-```
-✅ Unified API for Cloud Resources:
-Crossplane integrates cloud resources into Kubernetes using CRDs. This means you can manage cloud infrastructure alongside Kubernetes workloads using a single API
-✅ Multi-Cloud Management:
-Crossplane supports multiple cloud providers like AWS, Azure, and Google Cloud. You can use the same API to manage resources across different cloud platforms
-✅ Declarative Infrastructure Management:
-Like Kubernetes resources, Crossplane allows you to define your desired infrastructure state declaratively. Once defined, Crossplane continuously reconciles your infrastructure to match this state.
-✅ Composable Infrastructure:
-Crossplane lets you bundle multiple cloud resources together into higher-level abstractions, called Compositions and Composite Resources (XRs), allowing for reusable and simplified infrastructure components.
-✅ Kubernetes-Native GitOps:
-Crossplane works well with GitOps practices, enabling teams to manage cloud infrastructure in the same way they manage Kubernetes workloads: declaratively and with continuous reconciliation.
-✅ Community and Ecosystem:
-Being an open-source project, Crossplane has a growing community and a rich ecosystem of providers and compositions that you can leverage.
+#### 🧱 Key Components:
+   - **Directed Acyclic Graphs (DAGs):**: Workflows in Airflow are defined as DAGs, where each node is a task and edges define execution order.
+   - **Python-based**: Pipelines are written in Python code, so they are dynamic and version-controllable instead of being defined by static configuration.
+   - **Scheduler & Executor**: The scheduler decides what tasks to run and when, while the executor actually runs them (locally, on Celery, Kubernetes, etc.).
+   - **UI & Monitoring**: Airflow provides a web UI to visualize DAGs, check logs, retry failed jobs, and monitor pipeline health
+   - **Integrations**: Has operators and hooks to connect with databases, cloud providers (AWS, GCP, Azure), big data frameworks (Spark, Hive), and more.
 ```
 
 🔨 Example : Config 
