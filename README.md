@@ -10,7 +10,7 @@ Apache Airflow is an open-source workflow orchestration platform used to program
    - **Scheduler & Executor**: The scheduler decides what tasks to run and when, while the executor actually runs them (locally, on Celery, Kubernetes, etc.).
    - **UI & Monitoring**: Airflow provides a web UI to visualize DAGs, check logs, retry failed jobs, and monitor pipeline health
    - **Integrations**: Has operators and hooks to connect with databases, cloud providers (AWS, GCP, Azure), big data frameworks (Spark, Hive), and more.
-```
+
 
 🔨 Example : Config 
 
