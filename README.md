@@ -12,7 +12,8 @@ Apache Airflow is an open-source workflow orchestration platform used to program
    - **Integrations**: Has operators and hooks to connect with databases, cloud providers (AWS, GCP, Azure), big data frameworks (Spark, Hive), and more.
 
 
-🔨 Typical Use Cases
+
+🎯 Typical Use Cases
 ```
 ETL (Extract, Transform, Load) pipelines
 Data warehouse updates (e.g., nightly batch jobs)
