@@ -1,8 +1,7 @@
-![1_FdXjpygIU1EdBaZ7n8vpxg](https://github.com/user-attachments/assets/6441e2b0-bac5-494d-8c56-aee3caeda5b9)
-
+<img width="1287" height="577" alt="1_GXjmR0-ghYha9IEMdgpLyg" src="https://github.com/user-attachments/assets/1bd1cb2f-e766-49c3-812a-b781462bdd9d" />
 
 ###  Airflow | Kubernetes ☸️
-Crossplane is the cloud native control plane framework that allows you to build control planes without needing to write code. Crossplane has a highly extensible backend that enables you to orchestrate applications and infrastructure no matter where they run and a highly configurable frontend that lets you define the declarative API it offers.
+Apache Airflow is an open-source workflow orchestration platform used to programmatically author, schedule, and monitor data pipelines or other workflows.
 
 
 🧱 Key Features of Crossplane 
