@@ -1,4 +1,5 @@
-<img width="1400" height="606" alt="1_PWQB6lj12818Kzp-rszvpw" src="https://github.com/user-attachments/assets/423de933-848a-45c4-8955-c010e9a9ccd7" />
+<img width="259" height="92" alt="image" src="https://github.com/user-attachments/assets/e21378d4-1007-4896-b9f3-a70c0c7bf61d" />
+
 
 ###  Airflow | Kubernetes ☸️
 Apache Airflow is an open-source workflow orchestration platform used to programmatically author, schedule, and monitor data pipelines or other workflows.
