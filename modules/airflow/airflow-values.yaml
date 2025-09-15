@@ -1,14 +1,59 @@
 
-executor: "CeleryExecutor"
+# airflow-values.yaml
+executor: CeleryExecutor
 
+# Database configuration (PostgreSQL)
+data:
+  metadataConnection:
+    user: airflow
+    pass: airflow
+    protocol: postgresql
+    host: airflow-postgresql
+    port: 5432
+    db: airflow
+
+# Enable bundled PostgreSQL (for testing/dev; in production, use external DB)
+postgresql:
+  enabled: true
+  auth:
+    username: airflow
+    password: airflow
+    database: airflow
+
+# Message broker (Redis for Celery)
+redis:
+  enabled: true
+  auth:
+    enabled: false  # for simplicity; enable auth in production
+
+# DAGs storage
 dags:
   persistence:
     enabled: true
     size: 1Gi
+  gitSync:
+    enabled: true
+    repo: "https://github.com/my-org/airflow-dags.git"
+    branch: main
+    subPath: ""
+    rev: HEAD
 
+# Worker configuration
 workers:
   replicas: 2
+  resources:
+    requests:
+      cpu: "500m"
+      memory: "1Gi"
+    limits:
+      cpu: "1"
+      memory: "2Gi"
 
+# Web UI service
 web:
   service:
-    type: ClusterIP
+    type: ClusterIP   # change to LoadBalancer or configure ingress if external access needed
+
+# Ingress example (optional)
+ingress:
+  enabled: false
