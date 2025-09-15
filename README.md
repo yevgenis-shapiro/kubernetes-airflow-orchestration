@@ -1,4 +1,5 @@
-<img width="259" height="92" alt="image" src="https://github.com/user-attachments/assets/e21378d4-1007-4896-b9f3-a70c0c7bf61d" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ee147280-b0f7-4c50-b5c7-f6f0e9324647" />
+
 
 
 ###  Airflow | Kubernetes ☸️
